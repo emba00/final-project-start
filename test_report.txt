@@ -1,6 +1,6 @@
 
 > react-typescript-starter@0.1.0 test
-> react-scripts test --coverage
+> react-scripts test
 
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
@@ -25,7 +25,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (81 ms)
+  ✓ renders the course name somewhere (82 ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
@@ -33,7 +33,7 @@ File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 All files           |   10.34 |    11.11 |      15 |   10.52 |                   
  src                |    1.96 |        0 |    6.25 |       2 |                   
   App.tsx           |     100 |      100 |     100 |     100 |                   
-  Board.tsx         |       0 |        0 |       0 |       0 | 7-43              
+  Board.tsx         |       0 |        0 |       0 |       0 | 7-42              
   BoardSquare.tsx   |       0 |        0 |       0 |       0 | 13-26             
   Overlay.tsx       |       0 |      100 |       0 |       0 | 7-8               
   Pic.tsx           |       0 |        0 |       0 |       0 | 5-13              
@@ -48,5 +48,5 @@ All files           |   10.34 |    11.11 |      15 |   10.52 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.153 s
+Time:        2.315 s
 Ran all test suites.
