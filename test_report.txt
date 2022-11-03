@@ -1,13 +1,13 @@
 
 > react-typescript-starter@0.1.0 test
-> react-scripts test
+> react-scripts test --coverage
 
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
   console.error
-    Warning: validateDOMNesting(...): <ul> cannot appear as a descendant of <p>.
-        at ul
+    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+        at div
         at p
         at div
         at div
@@ -25,12 +25,12 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (82 ms)
+  ✓ renders the course name somewhere (127 ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |   10.34 |    11.11 |      15 |   10.52 |                   
+All files           |   13.33 |    11.11 |   19.04 |   13.55 |                   
  src                |    1.96 |        0 |    6.25 |       2 |                   
   App.tsx           |     100 |      100 |     100 |     100 |                   
   Board.tsx         |       0 |        0 |       0 |       0 | 7-42              
@@ -40,13 +40,14 @@ All files           |   10.34 |    11.11 |      15 |   10.52 |
   Square.tsx        |       0 |        0 |       0 |       0 | 7-11              
   constants.ts      |       0 |      100 |     100 |       0 | 1                 
   game.ts           |       0 |        0 |       0 |       0 | 1-27              
- src/components     |   71.42 |       75 |      50 |   71.42 |                   
-  Destroy.tsx       |      50 |      100 |       0 |      50 | 4                 
+ src/components     |   77.77 |       75 |      60 |   77.77 |                   
+  Car.tsx           |     100 |      100 |     100 |     100 |                   
+  Destroy.tsx       |      50 |      100 |       0 |      50 | 8                 
   Pimp.tsx          |     100 |      100 |     100 |     100 |                   
   PimpVsDestroy.tsx |   66.66 |       75 |      50 |   66.66 | 12                
 --------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.315 s
+Time:        3.036 s
 Ran all test suites.
