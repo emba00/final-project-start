@@ -25,7 +25,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (84 ms)
+  ✓ renders the course name somewhere (121 ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
@@ -50,5 +50,5 @@ All files           |   16.17 |    17.94 |      16 |   16.41 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.246 s
+Time:        3.344 s
 Ran all test suites.
