@@ -25,12 +25,12 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (98 ms)
+  ✓ renders the course name somewhere (84 ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |   13.84 |    17.94 |   16.66 |   14.06 |                   
+All files           |   16.17 |    17.94 |      16 |   16.41 |                   
  src                |    1.96 |        0 |    6.25 |       2 |                   
   App.tsx           |     100 |      100 |     100 |     100 |                   
   Board.tsx         |       0 |        0 |       0 |       0 | 7-42              
@@ -40,9 +40,9 @@ All files           |   13.84 |    17.94 |   16.66 |   14.06 |
   Square.tsx        |       0 |        0 |       0 |       0 | 7-11              
   constants.ts      |       0 |      100 |     100 |       0 | 1                 
   game.ts           |       0 |        0 |       0 |       0 | 1-27              
- src/components     |   57.14 |    43.75 |    37.5 |   57.14 |                   
+ src/components     |   58.82 |    43.75 |   33.33 |   58.82 |                   
   Car.tsx           |       0 |        0 |       0 |       0 | 8-14              
-  CarSpace.tsx      |      75 |    66.66 |      50 |      75 | 20                
+  CarSpace.tsx      |   71.42 |    66.66 |   33.33 |   71.42 | 32-37             
   Destroy.tsx       |      50 |      100 |       0 |      50 | 8                 
   Pimp.tsx          |     100 |      100 |     100 |     100 |                   
   PimpVsDestroy.tsx |   66.66 |       75 |      50 |   66.66 | 12                
@@ -50,5 +50,5 @@ All files           |   13.84 |    17.94 |   16.66 |   14.06 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.768 s
+Time:        2.246 s
 Ran all test suites.
