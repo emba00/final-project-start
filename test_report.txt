@@ -2,9 +2,6 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-Browserslist: caniuse-lite is outdated. Please run:
-  npx browserslist@latest --update-db
-  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
   console.error
     Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
         at div
@@ -12,9 +9,17 @@ Browserslist: caniuse-lite is outdated. Please run:
         at div
         at div
         at div
-        at PimpVsDestroy (/home/runner/work/final-project-start/final-project-start/src/components/PimpVsDestroy.tsx:7:33)
+        at PimpVsDestroy (/home/runner/work/final-project-start/final-project-start/src/components/PimpVsDestroy.tsx:7:41)
         at div
         at App
+
+      4 |
+      5 | test("renders the course name somewhere", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/CISC275/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -23,157 +28,52 @@ Browserslist: caniuse-lite is outdated. Please run:
       at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
       at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
-
-FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (124 ms)
-
-  ● renders the course name somewhere
-
-    TestingLibraryElementError: Unable to find an element with the text: /CISC275/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
-          [36m>[39m
-            [0mCAR APP [0m
-          [36m</header>[39m
-          [36m<div>[39m
-            [36m<div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"toolncar"[39m
-              [36m>[39m
-                [36m<h1>[39m
-                  [0mPimp Mode[0m
-                [36m</h1>[39m
-                [36m<p>[39m
-                  [0mPimp Mode Options:[0m
-                  [36m<div>[39m
-                    [36m<img[39m
-                      [33malt[39m=[32m"towel"[39m
-                      [33msrc[39m=[32m"towel.png"[39m
-                    [36m/>[39m
-                    [0mWipe Car[0m
-                  [36m</div>[39m
-                  [36m<div>[39m
-                    [36m<img[39m
-                      [33malt[39m=[32m"shine"[39m
-                      [33msrc[39m=[32m"shine.png"[39m
-                    [36m/>[39m
-                    [0mShine Car[0m
-                  [36m</div>[39m
-                  [36m<div>[39m
-                    [36m<img[39m
-                      [33malt[39m=[32m"pump"[39m
-                      [33msrc[39m=[32m"pump.png"[39m
-                    [36m/>[39m
-                    [0mFill Tires[0m
-                  [36m</div>[39m
-                  [36m<div>[39m
-                    [36m<img[39m
-                      [33malt[39m=[32m"glass repair"[39m
-                      [33msrc[39m=[32m"glass repair.png"[39m
-                    [36m/>[39m
-                    [0mRepair Windows[0m
-                  [36m</div>[39m
-                  [36m<div>[39m
-                    [0metc[0m
-                  [36m</div>[39m
-                [36m</p>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mPimp Vs Destroy[0m
-            [36m</button>[39m
-          [36m</div>[39m
-          [36m<div>[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [36m<div[39m
-                  [33mstyle[39m=[32m"background-image: url(street.jpg);"[39m
-                [36m>[39m
-                  [36m<img[39m
-                    [33malt[39m=[32m"red car"[39m
-                    [33msrc[39m=[32m"red car.png"[39m
-                  [36m/>[39m
-                [36m</div>[39m
-                [36m<div>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mChange Color (Red/Blue/Green)[0m
-                  [36m</button>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mChange Background (Street/City/Forest)[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-                [36m<span>[39m
-                  [36m<img[39m
-                    [33malt[39m=[32m"dirt"[39m
-                    [33msrc[39m=[32m"dirt.png"[39m
-                  [36m/>[39m
-                [36m</span>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-       5 | test("renders the course name somewhere", () => {
-       6 |     render(<App />);
-    >  7 |     const linkElement = screen.getByText(/CISC275/i);
-         |                                ^
-       8 |     expect(linkElement).toBeInTheDocument();
-       9 | });
-      10 |
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/App.test.tsx:7:32)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:22670:7)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:22293:18)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21881:7)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:25482:3)
+      at node_modules/react-dom/cjs/react-dom.development.js:26021:7
+      at unbatchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:22431:12)
+      at legacyRenderSubtreeIntoContainer (node_modules/react-dom/cjs/react-dom.development.js:26020:5)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:26103:10)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at batchedUpdates$1 (node_modules/react-dom/cjs/react-dom.development.js:22380:12)
+      at act (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-------------------------------|---------|----------|---------|---------|-------------------
-File                          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-------------------------------|---------|----------|---------|---------|-------------------
-All files                     |   23.61 |    27.02 |   25.92 |   23.94 |                   
- src                          |    1.96 |        0 |    6.25 |       2 |                   
-  App.tsx                     |     100 |      100 |     100 |     100 |                   
-  Board.tsx                   |       0 |        0 |       0 |       0 | 7-42              
-  BoardSquare.tsx             |       0 |        0 |       0 |       0 | 13-26             
-  Overlay.tsx                 |       0 |      100 |       0 |       0 | 7-8               
-  Pic.tsx                     |       0 |        0 |       0 |       0 | 5-13              
-  Square.tsx                  |       0 |        0 |       0 |       0 | 7-11              
-  constants.ts                |       0 |      100 |     100 |       0 | 1                 
-  game.ts                     |       0 |        0 |       0 |       0 | 1-27              
- src/components               |      75 |    71.42 |      50 |      75 |                   
-  Car.tsx                     |   71.42 |    66.66 |   33.33 |   71.42 | 33-38             
-  CarSpace.tsx                |     100 |       75 |     100 |     100 | 11                
-  CarSquare.tsx               |       0 |      100 |       0 |       0 | 4                 
-  Destroy.tsx                 |      50 |      100 |       0 |      50 | 8                 
-  Pimp.tsx                    |     100 |      100 |     100 |     100 |                   
-  PimpVsDestroy.tsx           |   66.66 |       75 |      50 |   66.66 | 12                
- src/components/Destroy Tools |     100 |      100 |     100 |     100 |                   
-  DirtTool.tsx                |     100 |      100 |     100 |     100 |                   
-------------------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 failed, 1 total
-Tests:       1 failed, 1 total
+PASS src/App.test.tsx
+  ✓ renders the course name somewhere (97 ms)
+
+------------------------------|---------|----------|---------|---------|---------------------------
+File                          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s         
+------------------------------|---------|----------|---------|---------|---------------------------
+All files                     |   31.57 |    26.53 |   24.39 |   33.07 |                           
+ src                          |    1.36 |        0 |    4.16 |    1.44 |                           
+  App.tsx                     |     100 |      100 |     100 |     100 |                           
+  Board.tsx                   |       0 |        0 |       0 |       0 | 7-96                      
+  BoardSquare.tsx             |       0 |        0 |       0 |       0 | 16-56                     
+  Overlay.tsx                 |       0 |      100 |       0 |       0 | 7-8                       
+  Pic.tsx                     |       0 |        0 |       0 |       0 | 9-18                      
+  Square.tsx                  |       0 |        0 |       0 |       0 | 7-11                      
+  constants.ts                |       0 |      100 |     100 |       0 | 1                         
+  game.ts                     |       0 |        0 |       0 |       0 | 3-47                      
+ src/components               |   67.79 |       65 |      50 |   70.17 |                           
+  Car.tsx                     |   61.36 |    58.33 |   33.33 |   64.28 | 49-52,56-58,62-70,106-119 
+  CarSpace.tsx                |     100 |       75 |     100 |     100 | 11                        
+  Destroy.tsx                 |      50 |      100 |       0 |      50 | 12                        
+  Pimp.tsx                    |     100 |      100 |     100 |     100 |                           
+  PimpVsDestroy.tsx           |   66.66 |       75 |      50 |   66.66 | 12                        
+ src/components/Destroy Tools |     100 |      100 |     100 |     100 |                           
+  DirtTool.tsx                |     100 |      100 |     100 |     100 |                           
+------------------------------|---------|----------|---------|---------|---------------------------
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        3.313 s
+Time:        2.537 s
 Ran all test suites.
