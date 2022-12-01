@@ -48,12 +48,12 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (98 ms)
+  ✓ renders the course name somewhere (91 ms)
 
 ------------------------------|---------|----------|---------|---------|---------------------------
 File                          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s         
 ------------------------------|---------|----------|---------|---------|---------------------------
-All files                     |   31.57 |    26.53 |   24.39 |   33.07 |                           
+All files                     |   32.35 |    20.93 |    23.8 |   33.84 |                           
  src                          |    1.36 |        0 |    4.16 |    1.44 |                           
   App.tsx                     |     100 |      100 |     100 |     100 |                           
   Board.tsx                   |       0 |        0 |       0 |       0 | 7-96                      
@@ -63,8 +63,8 @@ All files                     |   31.57 |    26.53 |   24.39 |   33.07 |
   Square.tsx                  |       0 |        0 |       0 |       0 | 7-11                      
   constants.ts                |       0 |      100 |     100 |       0 | 1                         
   game.ts                     |       0 |        0 |       0 |       0 | 3-47                      
- src/components               |   67.79 |       65 |      50 |   70.17 |                           
-  Car.tsx                     |   61.36 |    58.33 |   33.33 |   64.28 | 49-52,56-58,62-70,106-119 
+ src/components               |   67.74 |    64.28 |   47.05 |      70 |                           
+  Car.tsx                     |    61.7 |       50 |      30 |   64.44 | 64-67,71-73,77-85,119-135 
   CarSpace.tsx                |     100 |       75 |     100 |     100 | 11                        
   Destroy.tsx                 |      50 |      100 |       0 |      50 | 12                        
   Pimp.tsx                    |     100 |      100 |     100 |     100 |                           
@@ -75,5 +75,5 @@ All files                     |   31.57 |    26.53 |   24.39 |   33.07 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.415 s
+Time:        2.607 s
 Ran all test suites.
