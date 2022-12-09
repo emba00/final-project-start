@@ -13,7 +13,7 @@ const Clean = () => {
                     // eslint-disable-next-line no-extra-parens
                     (t: string, i: number): JSX.Element => (
                         <div key={t.toString()}>
-                            {console.log(t)}
+                            {console.log(t + " " + str[i])}
                             <CarSquare
                                 pic={t}
                                 description={str[i]}

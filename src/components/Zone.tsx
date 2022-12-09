@@ -20,7 +20,7 @@ import Tool from "./Tool";
 import { Button } from "react-bootstrap";
 // // import { ItemTypes } from "../constants";DragItem,
 // import Car from "./Car";
-import RedCar from "./images/Redcar.png";
+import RedCar from "./images/RedCar.png";
 import City from "./images/City.png";
 import Forest from "./images/Forest.png";
 import Street from "./images/Street.png";
@@ -29,23 +29,23 @@ import Mountain from "./images/Mountain.png";
 import Alley from "./images/Alley.png";
 import Cave from "./images/Cave.png";
 import Garage from "./images/Garage.png";
-// import RedCarLeftTire from "./images/redcar left tire.png";
-// import RedCarRightTire from "./images/redcar right tire.png";
-// import RedCarBothTires from "./images/redcar both tires.png";
-// import BlueCar from "./images/bluecar.png";
-// import BlueCarLeftTire from "./images/bluecar left tire.png";
-// import BlueCarRightTire from "./images/bluecar right tire.png";
-// import BlueCarBothTires from "./images/bluecar both tires.png";
-// import GreenCar from "./images/greencar.png";
-// import GreenCarLeftTire from "./images/greencar left tire.png";
-// import GreenCarRightTire from "./images/greencar right tire.png";
-// import GreenCarBothTires from "./images/greencar both tires.png";
+import RedCarLeftTire from "./images/RedCarLeftTire.png";
+import RedCarRightTire from "./images/RedCarRightTire.png";
+import RedCarBothTires from "./images/RedCarBothTires.png";
+import BlueCar from "./images/BlueCar.png";
+import BlueCarLeftTire from "./images/BlueCarLeftTire.png";
+import BlueCarRightTire from "./images/BlueCarRightTire.png";
+import BlueCarBothTires from "./images/BlueCarBothTires.png";
+import GreenCar from "./images/GreenCar.png";
+import GreenCarLeftTire from "./images/GreenCarLeftTire.png";
+import GreenCarRightTire from "./images/GreenCarRightTire.png";
+import GreenCarBothTires from "./images/GreenCarBothTires.png";
 
-// const cars = [
-//     [RedCar, RedCarLeftTire, RedCarRightTire, RedCarBothTires],
-//     [GreenCar, GreenCarLeftTire, GreenCarRightTire, GreenCarBothTires],
-//     [BlueCar, BlueCarLeftTire, BlueCarRightTire, BlueCarBothTires]
-// ];
+const cars = [
+    [RedCar, RedCarLeftTire, RedCarRightTire, RedCarBothTires],
+    [GreenCar, GreenCarLeftTire, GreenCarRightTire, GreenCarBothTires],
+    [BlueCar, BlueCarLeftTire, BlueCarRightTire, BlueCarBothTires]
+];
 const styles: CSSProperties = {
     //width: "200px",
     //height: "300px",
@@ -225,7 +225,6 @@ const Zone: React.FC<ZoneProps> = (props) => {
                             backgroundImage: `url(${backgrounds[background]}`
                         }}
                     >
-
                         {Object.keys(tools).map((key: string) => (
                             <Tool
                                 key={key}
