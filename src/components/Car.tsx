@@ -129,11 +129,13 @@ export const Car: React.FC<CarProps> = (props) => {
                             }}
                         >
                             {/* <div ref={drop} className="car">*/}
+                            {/*
                             <img
                                 src={cars[colorNum][tireNum]}
                                 alt="car model"
                             />
                             {/* </div>  */}
+                            {/*}
                             {colorNum == 0 && (
                                 <img src={RedCar} alt="red car" />
                             )}
@@ -143,6 +145,7 @@ export const Car: React.FC<CarProps> = (props) => {
                             {colorNum == 2 && (
                                 <img src={GreenCar} alt="green car" />
                             )}
+                            
                             {/* <div ref={boxRef} className="box">
                         <img src={Dirt} alt="dirt" />
                     </div>*/}
@@ -169,6 +172,7 @@ export const Car: React.FC<CarProps> = (props) => {
                             <Button onClick={() => addEffect(0, 0, "meep")}>
                                 addEffect
                             </Button>
+                            {/*
                             <Button
                                 onClick={() => setColorNum((colorNum + 1) % 3)}
                             >
@@ -181,6 +185,7 @@ export const Car: React.FC<CarProps> = (props) => {
                                     )
                                 }
                             >
+                            
                                 Change Background (Street/City/Forest)
                             </Button>
                             {/* <Button variant="primary" onClick={saveIt}>
