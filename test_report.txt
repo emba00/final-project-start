@@ -100,7 +100,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (200 ms)
+  ✓ renders the course name somewhere (122 ms)
 
 --------------------|---------|----------|---------|---------|-----------------------------------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                             
@@ -109,15 +109,15 @@ All files           |   26.54 |    45.05 |   13.88 |   26.31 |
  src                |   22.78 |        5 |    12.5 |   21.79 |                                               
   App.tsx           |   66.66 |      100 |      50 |   66.66 | 19                                            
   Board.tsx         |   53.84 |    16.66 |   28.57 |      52 | 19-21,70-95,112                               
-  BoardSquare.tsx   |       0 |      100 |       0 |       0 | 33-78                                         
+  BoardSquare.tsx   |       0 |      100 |       0 |       0 | 34-79                                         
   Overlay.tsx       |       0 |      100 |       0 |       0 | 7-8                                           
   Pic.tsx           |   16.66 |        0 |       0 |   16.66 | 22-40                                         
   Square.tsx        |       0 |        0 |       0 |       0 | 7-11                                          
   constants.ts      |     100 |      100 |     100 |     100 |                                               
   game.ts           |       0 |        0 |       0 |       0 | 4-48                                          
  src/components     |   28.78 |    56.33 |   14.58 |      29 |                                               
-  Car.tsx           |       0 |        0 |       0 |       0 | 44-176                                        
-  CarSpace.tsx      |       0 |        0 |       0 |       0 | 17-54                                         
+  Car.tsx           |       0 |        0 |       0 |       0 | 45-177                                        
+  CarSpace.tsx      |       0 |        0 |       0 |       0 | 18-55                                         
   CarSquare.tsx     |   36.84 |    74.46 |      20 |   36.84 | 29-42,78-91,124-137,175-188                   
   Clean.tsx         |      50 |      100 |       0 |      50 | 8-15                                          
   Destroy.tsx       |      50 |      100 |       0 |      50 | 39-46                                         
@@ -126,12 +126,12 @@ All files           |   26.54 |    45.05 |   13.88 |   26.31 |
   PimpVsDestroy.tsx |   66.66 |     62.5 |      50 |   66.66 | 16                                            
   Tool.tsx          |   33.33 |      100 |       0 |   33.33 | 31-44                                         
   ToolTypes.ts      |       0 |      100 |     100 |       0 | 1                                             
-  ToolinBox.tsx     |       0 |        0 |       0 |       0 | 11-20                                         
+  ToolinBox.tsx     |       0 |        0 |       0 |       0 | 12-21                                         
   Zone.tsx          |   48.57 |        0 |      25 |   48.57 | 81-92,114,129-130,138,143,233-235,239,256-268 
   interfaces.ts     |       0 |        0 |       0 |       0 |                                               
 --------------------|---------|----------|---------|---------|-----------------------------------------------
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        4.121 s
+Time:        2.857 s
 Ran all test suites.
