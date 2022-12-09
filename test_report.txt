@@ -2,6 +2,54 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
+  console.log
+    city
+
+      at map (src/components/Edit.tsx:47:38)
+          at Array.map (<anonymous>)
+
+  console.log
+    forest
+
+      at map (src/components/Edit.tsx:47:38)
+          at Array.map (<anonymous>)
+
+  console.log
+    street
+
+      at map (src/components/Edit.tsx:47:38)
+          at Array.map (<anonymous>)
+
+  console.log
+    dump
+
+      at map (src/components/Edit.tsx:47:38)
+          at Array.map (<anonymous>)
+
+  console.log
+    mountain
+
+      at map (src/components/Edit.tsx:47:38)
+          at Array.map (<anonymous>)
+
+  console.log
+    alley
+
+      at map (src/components/Edit.tsx:47:38)
+          at Array.map (<anonymous>)
+
+  console.log
+    cave
+
+      at map (src/components/Edit.tsx:47:38)
+          at Array.map (<anonymous>)
+
+  console.log
+    garage
+
+      at map (src/components/Edit.tsx:47:38)
+          at Array.map (<anonymous>)
+
   console.error
     Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
         at div
@@ -9,9 +57,13 @@
         at div
         at div
         at div
-        at PimpVsDestroy (/home/runner/work/final-project-start/final-project-start/src/components/PimpVsDestroy.tsx:7:41)
+        at PimpVsDestroy (/home/runner/work/final-project-start/final-project-start/src/components/PimpVsDestroy.tsx:9:43)
         at div
-        at App
+        at /home/runner/work/final-project-start/final-project-start/node_modules/react-dnd/dist/cjs/common/DndProvider.js:40:23
+        at Board (/home/runner/work/final-project-start/final-project-start/src/Board.tsx:60:40)
+        at div
+        at div
+        at App (/home/runner/work/final-project-start/final-project-start/src/App.tsx:17:47)
 
       4 |
       5 | test("renders the course name somewhere", () => {
@@ -48,32 +100,38 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (91 ms)
+  ✓ renders the course name somewhere (129 ms)
 
-------------------------------|---------|----------|---------|---------|---------------------------
-File                          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s         
-------------------------------|---------|----------|---------|---------|---------------------------
-All files                     |   32.35 |    20.93 |    23.8 |   33.84 |                           
- src                          |    1.36 |        0 |    4.16 |    1.44 |                           
-  App.tsx                     |     100 |      100 |     100 |     100 |                           
-  Board.tsx                   |       0 |        0 |       0 |       0 | 7-96                      
-  BoardSquare.tsx             |       0 |        0 |       0 |       0 | 16-56                     
-  Overlay.tsx                 |       0 |      100 |       0 |       0 | 7-8                       
-  Pic.tsx                     |       0 |        0 |       0 |       0 | 9-18                      
-  Square.tsx                  |       0 |        0 |       0 |       0 | 7-11                      
-  constants.ts                |       0 |      100 |     100 |       0 | 1                         
-  game.ts                     |       0 |        0 |       0 |       0 | 3-47                      
- src/components               |   67.74 |    64.28 |   47.05 |      70 |                           
-  Car.tsx                     |    61.7 |       50 |      30 |   64.44 | 64-67,71-73,77-85,119-135 
-  CarSpace.tsx                |     100 |       75 |     100 |     100 | 11                        
-  Destroy.tsx                 |      50 |      100 |       0 |      50 | 12                        
-  Pimp.tsx                    |     100 |      100 |     100 |     100 |                           
-  PimpVsDestroy.tsx           |   66.66 |       75 |      50 |   66.66 | 12                        
- src/components/Destroy Tools |     100 |      100 |     100 |     100 |                           
-  DirtTool.tsx                |     100 |      100 |     100 |     100 |                           
-------------------------------|---------|----------|---------|---------|---------------------------
+--------------------|---------|----------|---------|---------|-----------------------------------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                             
+--------------------|---------|----------|---------|---------|-----------------------------------------------
+All files           |   26.54 |    45.05 |   13.88 |   26.31 |                                               
+ src                |   22.78 |        5 |    12.5 |   21.79 |                                               
+  App.tsx           |   66.66 |      100 |      50 |   66.66 | 19                                            
+  Board.tsx         |   53.84 |    16.66 |   28.57 |      52 | 19-21,70-95,112                               
+  BoardSquare.tsx   |       0 |      100 |       0 |       0 | 33-78                                         
+  Overlay.tsx       |       0 |      100 |       0 |       0 | 7-8                                           
+  Pic.tsx           |   16.66 |        0 |       0 |   16.66 | 22-40                                         
+  Square.tsx        |       0 |        0 |       0 |       0 | 7-11                                          
+  constants.ts      |     100 |      100 |     100 |     100 |                                               
+  game.ts           |       0 |        0 |       0 |       0 | 4-48                                          
+ src/components     |   28.78 |    56.33 |   14.58 |      29 |                                               
+  Car.tsx           |       0 |        0 |       0 |       0 | 44-176                                        
+  CarSpace.tsx      |       0 |        0 |       0 |       0 | 17-54                                         
+  CarSquare.tsx     |   36.84 |    74.46 |      20 |   36.84 | 29-42,78-91,124-137,175-188                   
+  Clean.tsx         |      50 |      100 |       0 |      50 | 8-15                                          
+  Destroy.tsx       |      50 |      100 |       0 |      50 | 39-46                                         
+  Edit.tsx          |     100 |      100 |     100 |     100 |                                               
+  Pimp.tsx          |      50 |      100 |       0 |      50 | 45-52                                         
+  PimpVsDestroy.tsx |   66.66 |     62.5 |      50 |   66.66 | 16                                            
+  Tool.tsx          |   33.33 |      100 |       0 |   33.33 | 31-44                                         
+  ToolTypes.ts      |       0 |      100 |     100 |       0 | 1                                             
+  ToolinBox.tsx     |       0 |        0 |       0 |       0 | 11-20                                         
+  Zone.tsx          |   48.57 |        0 |      25 |   48.57 | 81-92,114,129-130,138,143,233-235,239,256-268 
+  interfaces.ts     |       0 |        0 |       0 |       0 |                                               
+--------------------|---------|----------|---------|---------|-----------------------------------------------
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.869 s
+Time:        3.341 s
 Ran all test suites.
