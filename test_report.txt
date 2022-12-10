@@ -99,7 +99,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (140 ms)
+  ✓ renders the course name somewhere (137 ms)
 
 ----------------------------|---------|----------|---------|---------|------------------------------------------------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                          
@@ -134,5 +134,5 @@ All files                   |   23.44 |    18.46 |   14.47 |   23.24 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        3.212 s
+Time:        3.346 s
 Ran all test suites.
