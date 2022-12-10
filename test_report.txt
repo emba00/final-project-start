@@ -3,49 +3,49 @@
 > react-scripts test --coverage
 
   console.log
-    city
+    City
 
       at map (src/components/Edit.tsx:47:38)
           at Array.map (<anonymous>)
 
   console.log
-    forest
+    Forest
 
       at map (src/components/Edit.tsx:47:38)
           at Array.map (<anonymous>)
 
   console.log
-    street
+    Street
 
       at map (src/components/Edit.tsx:47:38)
           at Array.map (<anonymous>)
 
   console.log
-    dump
+    Dump
 
       at map (src/components/Edit.tsx:47:38)
           at Array.map (<anonymous>)
 
   console.log
-    mountain
+    Mountain
 
       at map (src/components/Edit.tsx:47:38)
           at Array.map (<anonymous>)
 
   console.log
-    alley
+    Alley
 
       at map (src/components/Edit.tsx:47:38)
           at Array.map (<anonymous>)
 
   console.log
-    cave
+    Cave
 
       at map (src/components/Edit.tsx:47:38)
           at Array.map (<anonymous>)
 
   console.log
-    garage
+    Garage
 
       at map (src/components/Edit.tsx:47:38)
           at Array.map (<anonymous>)
@@ -60,7 +60,6 @@
         at PimpVsDestroy (/home/runner/work/final-project-start/final-project-start/src/components/PimpVsDestroy.tsx:9:43)
         at div
         at /home/runner/work/final-project-start/final-project-start/node_modules/react-dnd/dist/cjs/common/DndProvider.js:40:23
-        at Board (/home/runner/work/final-project-start/final-project-start/src/Board.tsx:60:40)
         at div
         at div
         at App (/home/runner/work/final-project-start/final-project-start/src/App.tsx:17:47)
@@ -100,38 +99,40 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (156 ms)
+  ✓ renders the course name somewhere (135 ms)
 
---------------------|---------|----------|---------|---------|-----------------------------------------------
-File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                             
---------------------|---------|----------|---------|---------|-----------------------------------------------
-All files           |   26.54 |    45.05 |   13.88 |   26.31 |                                               
- src                |   22.78 |        5 |    12.5 |   21.79 |                                               
-  App.tsx           |   66.66 |      100 |      50 |   66.66 | 19                                            
-  Board.tsx         |   53.84 |    16.66 |   28.57 |      52 | 19-21,70-95,112                               
-  BoardSquare.tsx   |       0 |      100 |       0 |       0 | 34-79                                         
-  Overlay.tsx       |       0 |      100 |       0 |       0 | 7-8                                           
-  Pic.tsx           |   16.66 |        0 |       0 |   16.66 | 22-40                                         
-  Square.tsx        |       0 |        0 |       0 |       0 | 7-11                                          
-  constants.ts      |     100 |      100 |     100 |     100 |                                               
-  game.ts           |       0 |        0 |       0 |       0 | 4-48                                          
- src/components     |   28.78 |    56.33 |   14.58 |      29 |                                               
-  Car.tsx           |       0 |        0 |       0 |       0 | 45-177                                        
-  CarSpace.tsx      |       0 |        0 |       0 |       0 | 18-55                                         
-  CarSquare.tsx     |   36.84 |    74.46 |      20 |   36.84 | 29-42,78-91,124-137,175-188                   
-  Clean.tsx         |      50 |      100 |       0 |      50 | 8-15                                          
-  Destroy.tsx       |      50 |      100 |       0 |      50 | 39-46                                         
-  Edit.tsx          |     100 |      100 |     100 |     100 |                                               
-  Pimp.tsx          |      50 |      100 |       0 |      50 | 45-52                                         
-  PimpVsDestroy.tsx |   66.66 |     62.5 |      50 |   66.66 | 16                                            
-  Tool.tsx          |   33.33 |      100 |       0 |   33.33 | 31-44                                         
-  ToolTypes.ts      |       0 |      100 |     100 |       0 | 1                                             
-  ToolinBox.tsx     |       0 |        0 |       0 |       0 | 12-21                                         
-  Zone.tsx          |   48.57 |        0 |      25 |   48.57 | 81-92,114,129-130,138,143,233-235,239,256-268 
-  interfaces.ts     |       0 |        0 |       0 |       0 |                                               
---------------------|---------|----------|---------|---------|-----------------------------------------------
+----------------------------|---------|----------|---------|---------|------------------------------------------------------------
+File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                          
+----------------------------|---------|----------|---------|---------|------------------------------------------------------------
+All files                   |   23.44 |    18.46 |   14.47 |   23.24 |                                                            
+ src                        |   20.93 |        5 |   11.11 |      20 |                                                            
+  App.tsx                   |   43.75 |       50 |   33.33 |      40 | 20,36-46,67                                                
+  Board.tsx                 |      45 |        0 |   16.66 |      45 | 19-21,80-98,111                                            
+  BoardSquare.tsx           |       0 |      100 |       0 |       0 | 34-79                                                      
+  Overlay.tsx               |       0 |      100 |       0 |       0 | 7-8                                                        
+  Pic.tsx                   |   16.66 |        0 |       0 |   16.66 | 22-40                                                      
+  Square.tsx                |       0 |        0 |       0 |       0 | 7-11                                                       
+  constants.ts              |     100 |      100 |     100 |     100 |                                                            
+  game.ts                   |       0 |        0 |       0 |       0 | 4-48                                                       
+ src/components             |   23.78 |     20.9 |   16.32 |   23.91 |                                                            
+  Car.tsx                   |       0 |      100 |       0 |       0 | 45-179                                                     
+  CarSpace.tsx              |       0 |        0 |       0 |       0 | 18-55                                                      
+  CarSquare.tsx             |   30.43 |     37.5 |   33.33 |   30.43 | 27-40,115-250                                              
+  Clean.tsx                 |      50 |      100 |       0 |      50 | 8-16                                                       
+  Destroy.tsx               |      50 |      100 |       0 |      50 | 39-46                                                      
+  Edit.tsx                  |     100 |      100 |     100 |     100 |                                                            
+  Pimp.tsx                  |      50 |      100 |       0 |      50 | 45-52                                                      
+  PimpVsDestroy.tsx         |   66.66 |     62.5 |      50 |   66.66 | 16                                                         
+  Tool.tsx                  |   33.33 |      100 |       0 |   33.33 | 31-43                                                      
+  ToolTypes.ts              |       0 |      100 |     100 |       0 | 1                                                          
+  ToolinBox.tsx             |       0 |        0 |       0 |       0 | 12-21                                                      
+  Zone.tsx                  |   26.13 |        0 |   23.07 |   26.13 | 65-69,77-92,96-119,145-158,176-190,207,213,233-235,239,264 
+  interfaces.ts             |       0 |        0 |       0 |       0 |                                                            
+ src/components/interfacing |     100 |      100 |     100 |     100 |                                                            
+  ImageRenders.ts           |     100 |      100 |     100 |     100 |                                                            
+----------------------------|---------|----------|---------|---------|------------------------------------------------------------
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        4.158 s
+Time:        3.182 s
 Ran all test suites.
