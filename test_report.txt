@@ -61,8 +61,10 @@
         at div
         at /home/runner/work/final-project-start/final-project-start/node_modules/react-dnd/dist/cjs/common/DndProvider.js:40:23
         at div
+        at Board (/home/runner/work/final-project-start/final-project-start/src/Board.tsx:61:13)
         at div
-        at App (/home/runner/work/final-project-start/final-project-start/src/App.tsx:17:47)
+        at div
+        at App (/home/runner/work/final-project-start/final-project-start/src/App.tsx:17:35)
 
       4 |
       5 | test("renders the course name somewhere", () => {
@@ -99,40 +101,41 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (137 ms)
+  ✓ renders the course name somewhere (152 ms)
 
-----------------------------|---------|----------|---------|---------|------------------------------------------------------------
-File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                          
-----------------------------|---------|----------|---------|---------|------------------------------------------------------------
-All files                   |   23.44 |    18.46 |   14.47 |   23.24 |                                                            
- src                        |   20.93 |        5 |   11.11 |      20 |                                                            
-  App.tsx                   |   43.75 |       50 |   33.33 |      40 | 20,36-46,67                                                
-  Board.tsx                 |      45 |        0 |   16.66 |      45 | 19-21,80-98,111                                            
-  BoardSquare.tsx           |       0 |      100 |       0 |       0 | 34-79                                                      
-  Overlay.tsx               |       0 |      100 |       0 |       0 | 7-8                                                        
-  Pic.tsx                   |   16.66 |        0 |       0 |   16.66 | 22-40                                                      
-  Square.tsx                |       0 |        0 |       0 |       0 | 7-11                                                       
-  constants.ts              |     100 |      100 |     100 |     100 |                                                            
-  game.ts                   |       0 |        0 |       0 |       0 | 4-48                                                       
- src/components             |   23.78 |     20.9 |   16.32 |   23.91 |                                                            
-  Car.tsx                   |       0 |      100 |       0 |       0 | 45-179                                                     
-  CarSpace.tsx              |       0 |        0 |       0 |       0 | 18-55                                                      
-  CarSquare.tsx             |   30.43 |     37.5 |   33.33 |   30.43 | 27-40,115-250                                              
-  Clean.tsx                 |      50 |      100 |       0 |      50 | 8-16                                                       
-  Destroy.tsx               |      50 |      100 |       0 |      50 | 39-46                                                      
-  Edit.tsx                  |     100 |      100 |     100 |     100 |                                                            
-  Pimp.tsx                  |      50 |      100 |       0 |      50 | 45-52                                                      
-  PimpVsDestroy.tsx         |   66.66 |     62.5 |      50 |   66.66 | 16                                                         
-  Tool.tsx                  |   33.33 |      100 |       0 |   33.33 | 31-43                                                      
-  ToolTypes.ts              |       0 |      100 |     100 |       0 | 1                                                          
-  ToolinBox.tsx             |       0 |        0 |       0 |       0 | 12-21                                                      
-  Zone.tsx                  |   26.13 |        0 |   23.07 |   26.13 | 65-69,77-92,96-119,145-158,176-190,207,213,233-235,239,264 
-  interfaces.ts             |       0 |        0 |       0 |       0 |                                                            
- src/components/interfacing |     100 |      100 |     100 |     100 |                                                            
-  ImageRenders.ts           |     100 |      100 |     100 |     100 |                                                            
-----------------------------|---------|----------|---------|---------|------------------------------------------------------------
+----------------------------|---------|----------|---------|---------|------------------------------------------------------------------
+File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                
+----------------------------|---------|----------|---------|---------|------------------------------------------------------------------
+All files                   |   22.18 |    17.98 |   16.25 |   21.98 |                                                                  
+ src                        |   21.97 |     9.09 |   16.66 |   21.11 |                                                                  
+  App.tsx                   |   46.15 |       50 |      50 |   41.66 | 21-31                                                            
+  Board.tsx                 |   42.85 |    16.66 |   27.27 |   42.85 | 19-21,85-161,173-174,212                                         
+  BoardSquare.tsx           |       0 |      100 |       0 |       0 | 34-79                                                            
+  Overlay.tsx               |       0 |      100 |       0 |       0 | 7-8                                                              
+  Pic.tsx                   |   16.66 |        0 |       0 |   16.66 | 22-40                                                            
+  Square.tsx                |       0 |        0 |       0 |       0 | 7-11                                                             
+  constants.ts              |     100 |      100 |     100 |     100 |                                                                  
+  game.ts                   |       0 |        0 |       0 |       0 | 4-48                                                             
+ src/components             |   21.46 |    19.65 |      16 |   21.57 |                                                                  
+  Car.tsx                   |       0 |      100 |       0 |       0 | 45-179                                                           
+  CarSpace.tsx              |       0 |        0 |       0 |       0 | 18-55                                                            
+  CarSquare.tsx             |   30.43 |    36.73 |   33.33 |   30.43 | 27-40,115-249                                                    
+  Clean.tsx                 |      50 |      100 |       0 |      50 | 8-16                                                             
+  Destroy.tsx               |      50 |      100 |       0 |      50 | 39-46                                                            
+  Edit.tsx                  |     100 |      100 |     100 |     100 |                                                                  
+  Pimp.tsx                  |      50 |      100 |       0 |      50 | 45-52                                                            
+  PimpVsDestroy.tsx         |   66.66 |     62.5 |      50 |   66.66 | 16                                                               
+  SavedCars.tsx             |       0 |      100 |     100 |       0 | 74                                                               
+  Tool.tsx                  |   33.33 |      100 |       0 |   33.33 | 31-43                                                            
+  ToolTypes.ts              |       0 |      100 |     100 |       0 | 1                                                                
+  ToolinBox.tsx             |       0 |        0 |       0 |       0 | 12-21                                                            
+  Zone.tsx                  |    21.5 |        0 |   21.42 |    21.5 | 73-77,85-100,104-127,153-164,182-208,222,231,251-253,257-265,290 
+  interfaces.ts             |       0 |        0 |       0 |       0 |                                                                  
+ src/components/interfacing |     100 |      100 |     100 |     100 |                                                                  
+  ImageRenders.ts           |     100 |      100 |     100 |     100 |                                                                  
+----------------------------|---------|----------|---------|---------|------------------------------------------------------------------
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        3.346 s
+Time:        3.633 s
 Ran all test suites.
